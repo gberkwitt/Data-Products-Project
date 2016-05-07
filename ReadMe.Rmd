@@ -1,0 +1,50 @@
+---
+title: "Data Products - course project"
+author: "Glenn Berkwitt"
+date: "May 7, 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Overview
+The assignment (one-half of the Johns Hopkins Developing Data Products course project) was to accomplish the following:  
+
+* Write a shiny application with associated supporting documentation. The documentation should be thought of as whatever a user will need to get started using your application,  
+* Deploy the application on Rstudio's shiny server,  
+* Share the application link by pasting it into the provided text box,  
+* Share your server.R and ui.R code on github.  
+
+It was required that the application include the following:  
+
+* Some form of input (widget: textbox, radio button, checkbox, ...),  
+* Some operation on the ui input in sever.R,  
+* Some reactive output displayed as a result of server calculations,  
+* Enough documentation so that a novice user could use your application,  
+* The documentation should be at the Shiny website itself.  
+
+##Objective
+It is the objective of this document to provide sufficient documentation that a novice user could use my application.
+
+##What it does
+The app itself:  https://gberkwitt.shinyapps.io/Course_Project/
+
+This Shiny app demonstrates some basic statistical relationships, specifically how the standard error of the mean, as calculated from the sample statistics for a single sample, corresponds to the width of the expected distribution of means. There are two sliders one can adjust:  
+
+1. the standard deviation of a population,  
+2. the number of observations within a single sample.  
+
+Moving these sliders enables one to see the following visualizations:  
+
+1. a plot of the poplulation distribution as a function of the population standard deviation selected,  
+2. a plot showing the frequency of population distribution for a single sample according to  
++ the standard deviation chosen as well as  
++ the effect of the observation quantity on the standard error of the mean,  
+3. a plot showing the distribution of means from numerous samples as a function of the variables chosen on the sliders.
+
+To see this brilliant bit of work, please visit https://gberkwitt.shinyapps.io/Course_Project/
+
+
+
